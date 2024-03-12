@@ -19,10 +19,11 @@ export class CacheManegerController {
   @Get('get-cache')
   @UseInterceptors(CacheInterceptor)
   getCache() {
-    console.log('method executed');
+    const time = new Date().toLocaleTimeString();
+    console.log(`method executed ${time}`);
 
     return {
-      message: 'Data in cache: ' + new Date().toLocaleTimeString(),
+      message: `Data in cache: ${time}`,
     };
   }
 
