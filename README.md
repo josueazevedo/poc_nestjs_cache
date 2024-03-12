@@ -10,24 +10,24 @@ The primary objective of this Proof of Concept (POC) project is to explore and c
 2. Employing the `cache-manager-redis-store` package for Redis-based caching.
 3. Implementing caching with the `redisio` package directly.
 
-This POC seeks to provide insights into the ease of implementation, performance, and effectiveness of each caching strategy within a NestJS application environment.
+This POC seeks to provide insights into the ease of implementation of each caching strategy within a NestJS application environment.
 
 ---
 
 ## Setup:
 
-Before running the POC, ensure you have Node.js and npm installed on your system. Additionally, have Redis server set up for the Redis-based caching approaches.
+Before running the POC, ensure you have Node.js and Docker installed on your system.
 
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/josueazevedo/poc_nestjs_cache
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd <project_directory>
+   cd poc_nestjs_cache
    ```
 
 3. Install dependencies:
@@ -63,11 +63,5 @@ The `cache-manager-redis-store` package extends the functionality of `cache-mana
 ### 3. Implementing Caching with `redisio` Package:
 
 For a more direct approach, we'll explore using the `redisio` package to interact directly with Redis for caching purposes. This approach provides fine-grained control over caching operations and may offer additional flexibility in certain scenarios.
-
----
-
-## Conclusion:
-
-Through this POC, we aim to assess the suitability and performance of each caching approach within the NestJS ecosystem. By comparing the ease of implementation, performance benchmarks, and flexibility, we can make informed decisions regarding caching strategies for real-world applications.
 
 ---
